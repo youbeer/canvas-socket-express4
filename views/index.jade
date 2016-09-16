@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .row
+    #connectId
+    canvas#canvas(width="800", height="600")
+    #tools
+      #colors
+        .color(style="background:#FFFFFF")
+        .color(style="background:#DCDDDD")
+        .color(style="background:#9ea1a3")
+        .color(style="background:#2B2B2B")
+        .color(style="background:#D9333F")
+        .color(style="background:#762f07")
+        .color(style="background:#F5B199")
+        .color(style="background:#FFDB4F")
+        .color(style="background:#7EBEAB")
+        .color(style="background:#2F5D50")
+        .color(style="background:#89C3EB")
+        .color(style="background:#706CAA")
+        input#clear.btn.btn-primary(type="button", value="clear")
+        input#save.btn.btn-danger(type="button", value="save")
+    script(src="/socket.io/socket.io.js")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+    script(src="/javascripts/sketch.js")
